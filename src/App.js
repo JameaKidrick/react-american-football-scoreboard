@@ -9,12 +9,12 @@ function App() {
   const [awayScore, setAwayScore] = useState(0);
 
   // TIMER COMPONENT
-  const [seconds, setSeconds] = useState('60');
+  const [seconds, setSeconds] = useState('59');
   // const[minutes, setMinutes] = useState(15);
   const [on, setOn] = useState(false);
 
   function reset(){
-    setSeconds(60);
+    setSeconds(59);
     // setMinutes(15);
     setOn(false);
   }
@@ -36,17 +36,18 @@ function App() {
       <section className="scoreboard">
         <div className="topRow">
           <div className="home">
-            <h2 className="home__name">Lions</h2>
+            <h2 className="home__name">Cheetahs</h2>
 
             {/* TODO STEP 3 - We need to change the hardcoded values in these divs to accept dynamic values from our state. */}
 
             <div className="home__score">{homeScore}</div>
           </div>
-          <div className="timer">{seconds}</div>
+          <div className="timer">00:{seconds}</div>
           <div className="away">
             <h2 className="away__name">Tigers</h2>
             <div className="away__score">{awayScore}</div>
           </div>
+          {/* <div className = 'quarter'>{quarterNum}</div> */}
         </div>
         <BottomRow />
       </section>
