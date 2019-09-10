@@ -47,7 +47,6 @@ function App() {
             <h2 className="away__name">Tigers</h2>
             <div className="away__score">{awayScore}</div>
           </div>
-          {/* <div className = 'quarter'>{quarterNum}</div> */}
         </div>
         <BottomRow />
       </section>
@@ -57,7 +56,7 @@ function App() {
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
 
           <div className = 'timerButtons'>
-            <button className = 'timerbtn' onClick = {on ? 'active' : 'inactive'}>
+            <button className = 'timerbtn' onClick = {() => on ? setOn(false) : setOn(true)}>
               {on ? 'Pause' : 'Start'}
             </button>
 
