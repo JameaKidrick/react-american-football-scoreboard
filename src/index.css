@@ -56,3 +56,12 @@ button:focus {
 button:active {
   transform: scale(0.99);
 }
+
+.resetbtn, .timerbtn{
+  border-radius: 1rem;
+}
+
+.timerButtons{
+  display:flex;
+  justify-content: space-between;
+}

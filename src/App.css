@@ -4,7 +4,7 @@
 }
 
 .scoreboard {
-  width: 58%;
+  width: 70%;
   margin: 10rem auto;
   background-color: #0b5402;
   color: white;
@@ -31,14 +31,17 @@
   border: 3px solid white;
   border-radius: 0.5rem;
   width: 15rem;
+  margin: 0 2%;
 }
 
 .home {
   background-color: #656565;
+  background-image: url('https://media.istockphoto.com/vectors/animal-spots-pattern-1-vector-id455483185?k=6&m=455483185&s=612x612&w=0&h=XglV1AAx6GBpu7pMtAmaegrzdHg6W3HVpwA-gXJa6_A=')
 }
 
 .away {
   background-color: #af750a;
+  background-image: url('https://101clipart.com/wp-content/uploads/05/Tiger%20Stripes%20Clipart%2001.jpg')
 }
 
 .home__name,
@@ -116,7 +119,22 @@
 .homeButtons__touchdown,
 .homeButtons__fieldGoal,
 .awayButtons__touchdown,
-.awayButtons__fieldGoal {
+.awayButtons__fieldGoal,
+.quarter, .down {
   margin: 1rem;
+  border-radius: 4px;
+}
+
+.downbtn {
+  position: absolute;
+  top: 90%;
+  left: 27%;
+  border-radius: 4px;
+}
+
+.quarterbtn {
+  position: absolute;
+  top: 90%;
+  right: 28%;
   border-radius: 4px;
 }
